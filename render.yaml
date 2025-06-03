@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: telegram-signal-server
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: توکن_بات_تو
+      - key: CHAT_ID
+        value: -1001234567890
+      - key: AUTH_TOKEN
+        value: mySecretToken123
